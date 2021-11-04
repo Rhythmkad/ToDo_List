@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+<!-- List View for Tasks   -->
+    <ListView
+        android:id="@+id/todo_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/tyrian_purple_dark"
+        android:dividerHeight="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/add_task_relative_layout"
+        android:visibility="invisible"/>
+
+    <!-- the <include> tag is used to include another layout
+         inside existing layout -->
+    <include
+        android:id="@+id/welcome_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/welcome_layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/add_task_relative_layout"/>
+
+    <!--  include layout to show layout when all tasks are completed
+          and the list is empty -->
+    <include
+        android:id="@+id/task_done_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/all_task_done_layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_above="@+id/add_task_relative_layout"/>
+
+    <!-- Add new task button   -->
+    <Button
+        android:id="@+id/welcome_screen_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
+        android:text="@string/add_a_new_task"/>
+
+    <!--  Layout for Edittext and Button to add a task -->
+    <RelativeLayout
+        android:id="@+id/add_task_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/add_task_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/add_task_btn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toStartOf="@+id/add_task_btn"
+            android:hint="@string/enter_a_new_task"
+            android:inputType="text"
+            android:maxLength="36"
+            android:maxLines="1"
+            tools:ignore="Autofill" />
+
+    <!-- Add task button -->
+        <Button
+            android:id="@+id/add_task_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/add_task" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout to show on start of the applicaton -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="8dp">
+
+    <!-- Image View   -->
+    <ImageView
+        android:id="@+id/task_iv"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/freshstart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!--  TextView for welcome text  -->
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_iv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="@string/welcome_txt"
+        android:textColor="@color/cobalt"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <!--  TextView for introduction text  -->
+    <TextView
+        android:id="@+id/intro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_tv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="@string/intro_txt"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    </RelativeLayout>

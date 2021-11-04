@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="enter_a_new_task">Enter a new task</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_to_be_done">Default text</string>
+    <string name="completed">Done?</string>
+    <string name="welcome_txt">Welcome to your Todo List</string>
+    <string name="intro_txt">Keep tracks of important things you need \n to get done. \n \n Anything to add?</string>
+    <string name="add_a_new_task">Add a new Task</string>
+    <string name="finished_task">Yee! You\'ve finished all your tasks. \n \n Add new task?</string>
+</resources>

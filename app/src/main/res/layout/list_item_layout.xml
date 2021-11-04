@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- list item layout displays how an item of the list will appear
+    when an item is added in the list -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkedTv"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="@color/black"
+    android:text="@string/task_to_be_done"
+    android:gravity="center_vertical"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:paddingStart="16dp"
+    android:paddingEnd="6dp" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  <menu>  Root node that contains one or more item.-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    It represents menu items. We can add multiple items  -->
+    <item
+        android:id="@+id/delete_task"
+        android:icon="@drawable/ic_delete_button"
+        app:showAsAction="always"
+        android:title="delete" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tyrian_purple">#660033</color>
+    <color name="tyrian_purple_light">#cc0066</color>
+    <color name="tyrian_purple_dark">#4d0026</color>
+    <color name="cobalt">#005c99</color>
+    <color name="vivid_blue">#0099ff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
